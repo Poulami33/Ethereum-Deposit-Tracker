@@ -21,32 +21,28 @@ Ether Tracker is a Python application that monitors Ethereum deposits on a speci
 ### **Installation**
 
 **Clone the Repository**  
-bash  
-Copy code  
+
 `git clone https://github.com/your-username/your-repository-name.git`  
 `cd your-repository-name`
 
 1. 
 
 **Create a Virtual Environment** (optional but recommended)  
-bash  
-Copy code  
+
 `python -m venv venv`  
 `` source venv/bin/activate  # On Windows, use `venv\Scripts\activate` ``
 
 2. 
 
 **Install Dependencies**  
-bash  
-Copy code  
+  
 `pip install -r requirements.txt`
 
 3. 
 
 **Configure the Application**  
 Update the configuration file `src/config.py` with your specific details:  
-python  
-Copy code  
+ 
 `# Configuration details`  
 `ALCHEMY_URL = "https://eth-mainnet.alchemyapi.io/v2/your-alchemy-api-key"`  
 `BOT_TOKEN = "your-telegram-bot-token"`  
@@ -59,8 +55,7 @@ Copy code
 
 To run the Ether Tracker application, execute the following command:
 
-bash  
-Copy code  
+
 `python src/main.py`
 
 The application will start fetching deposits from the Ethereum blockchain and sending notifications via Telegram. It will continue to run indefinitely, fetching deposits every 60 seconds.
@@ -79,8 +74,7 @@ The application will start fetching deposits from the Ethereum blockchain and se
 
 Update the `src/config.py` with your actual Alchemy API key, Telegram bot token, chat ID, and contract address. For example:
 
-python  
-Copy code  
+
 `ALCHEMY_URL = "https://eth-mainnet.alchemyapi.io/v2/your-alchemy-api-key"`  
 `BOT_TOKEN = "your-telegram-bot-token"`  
 `CHAT_ID = "your-chat-id"`  
@@ -90,8 +84,7 @@ Copy code
 
 Execute the main script:
 
-bash  
-Copy code  
+
 `python src/main.py`
 
 You should see log messages indicating the detection of new deposits and corresponding Telegram notifications.
