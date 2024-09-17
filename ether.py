@@ -7,10 +7,10 @@ from telegram.ext import Updater
 import asyncio
 
 # Configuration
-alchemy_url = "https://eth-mainnet.alchemyapi.io/v2/Dl9GcOc1Y-AzEiWZF42-ZHe3GlzbBZbJ"  # Alchemy API URL for Ethereum mainnet
-bot_token = "7331501704:AAHlKQSwSZGiT8LpdhsVKW5StLuFmAgDFlM"  # Telegram bot token
-chat_id = "1123861818"  # Telegram chat ID to receive notifications
-contract_address = "0x00000000219ab540356cBB839Cbe05303d7705Fa"  # Ethereum contract address to monitor
+alchemy_url = ""  # Alchemy API URL for Ethereum mainnet
+bot_token = ""  # Telegram bot token
+chat_id = ""  # Telegram chat ID to receive notifications
+contract_address = ""  # Ethereum contract address to monitor
 
 # Setup
 web3 = Web3(Web3.HTTPProvider(alchemy_url))  # Initialize Web3 connection
